@@ -19,3 +19,6 @@ Graham's scan is a method of finding the convex hull of a finite set of points i
     - in case of colinear points, we only keep the maximum value in points array
     - delete the duplicate values
     - add in stack the points situated on the convex hull, the point is added only if it determines a left-turn (counterclockwise direction) 
+
+## Example
+![Graham's scan](https://github.com/AndraRaco/Graham-s-scan/blob/master/Graham_scan.gif)
