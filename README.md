@@ -13,4 +13,9 @@ Graham's scan is a method of finding the convex hull of a finite set of points i
   * orientation(point1, points2, points3): calculates the orientation of an ordered triplet of points in the plane
   * polar_comparator: compares two points using the polar angle; used for sorting the points
   * find_min_y: finds the point having minimum y-coordinate and in case of equality choses the one with minimum x-coordinate
-  * graham_scan
+  * graham_scan:
+    - sort the points (except p0) according to the polar angle made by the line segment with x-axis in anti-clockwise direction
+    - let p0 be the point with minimum y-coordinate, or the leftmost such point in case of a tie
+    - in case of colinear points, we only keep the maximum value in points array
+    - delete the duplicate values
+    - add in stack the points situated on the convex hull, the point is added only if it determines a left-turn (counterclockwise direction) 
